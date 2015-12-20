@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="src\lcd_log.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="954" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\maintest.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4340" topLine="129" />
+		</Cursor>
+	</File>
+	<File name="src\stm32f429i_discovery_l3gd20.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="879" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="stm32f429zi_flash.ld" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2611" topLine="66" />
+		</Cursor>
+	</File>
+	<File name="..\files\diskio.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1153" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="..\files\saveToBmp.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2371" topLine="43" />
+		</Cursor>
+	</File>
+	<File name="..\files\sdF4spi.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13189" topLine="427" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\SPL\inc\stm32f4xx_dma.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="26797" topLine="541" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\SPL\src\stm32f4xx_dma2d.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6356" topLine="140" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\SPL\src\stm32f4xx_fmc.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="44517" topLine="975" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\SPL\src\stm32f4xx_ltdc.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="14564" topLine="368" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\SPL\src\stm32f4xx_spi.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10933" topLine="184" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\SPL\src\stm32f4xx_usart.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9257" topLine="315" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\sdram.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="878" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\sdram.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="87" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\startup_stm32f4xx.S" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10311" topLine="190" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\stm32f4xx.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4704" topLine="114" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\stm32f4xx_conf.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\system_stm32f429.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2628" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="..\shared\camera.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="104" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\shared\delay.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="148" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\shared\delay.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="72" topLine="0" />
+		</Cursor>
+	</File>
+</EmBlocks_layout_file>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBlocks_project_file>
+	<EmBlocksVersion release="2.30" revision="1" />
+	<FileVersion major="1" minor="0" />
+	<Project>
+		<Option title="viewer" />
+		<Option pch_mode="2" />
+		<Option compiler="armgcc_eb" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\viewer.elf" />
+				<Option object_output="obj\Debug\" />
+				<Option type="0" />
+				<Option compiler="armgcc_eb" />
+				<Option projectDeviceOptionsRelation="0" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O3" />
+					<Add option="-O0" />
+					<Add option="-g3" />
+					<Add option="-D__DONT_INIT_VTABLE" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Assembler>
+					<Add option="-Wa,--gdwarf-2" />
+				</Assembler>
+				<Linker>
+					<Add option="-eb_use_semi" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\viewer.elf" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option create_hex="1" />
+				<Option compiler="armgcc_eb" />
+				<Option projectDeviceOptionsRelation="0" />
+				<Compiler>
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+					<Add option="-O3" />
+					<Add option="-g2" />
+				</Compiler>
+				<Assembler>
+					<Add option="-Wa,--no-warn" />
+				</Assembler>
+				<Linker>
+					<Add option="-Wl,--gc-sections" />
+				</Linker>
+			</Target>
+		</Build>
+		<Device>
+			<Add option="$device=cortex-m4" />
+			<Add option="$fpu=fpv4-sp-d16" />
+			<Add option="$lscript=../sharedF4/stm32f407vg_flash.ld" />
+			<Add option="$stack=0x0800" />
+			<Add option="$heap=0x1000" />
+		</Device>
+		<Compiler>
+			<Add option="-mfloat-abi=softfp" />
+			<Add option="-std=c99" />
+			<Add option="-DARM_MATH_CM4" />
+			<Add option="-D__FPU_USED" />
+			<Add option="-DSTM32F4XX" />
+			<Add option="-DSTM32F40_41xxx" />
+			<Add option="-DUSE_STDPERIPH_DRIVER" />
+			<Add option="-DFT2_BUILD_LIBRARY" />
+			<Add directory="..\freetype\include" />
+			<Add directory="..\sharedF4\SPL\inc" />
+			<Add directory="..\sharedF4\SPL\src" />
+			<Add directory="..\sharedF4\cmsis" />
+			<Add directory="..\shared" />
+		</Compiler>
+		<Linker>
+			<Add option="-eb_start_files" />
+		</Linker>
+		<Unit filename="..\files\ccsbcs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\files\diskio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\files\diskio.h" />
+		<Unit filename="..\files\ff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\files\ff.h" />
+		<Unit filename="..\files\ffconf.h" />
+		<Unit filename="..\files\integer.h" />
+		<Unit filename="..\files\sd.h" />
+		<Unit filename="..\files\sdF4sdio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\files\tjpgd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\files\tjpgd.h" />
+		<Unit filename="..\freetype\include\config\ftconfig.h" />
+		<Unit filename="..\freetype\include\config\ftheader.h" />
+		<Unit filename="..\freetype\include\config\ftmodule.h" />
+		<Unit filename="..\freetype\include\config\ftoption.h" />
+		<Unit filename="..\freetype\include\config\ftstdlib.h" />
+		<Unit filename="..\freetype\include\freetype.h" />
+		<Unit filename="..\freetype\include\ft2build.h" />
+		<Unit filename="..\freetype\include\ftadvanc.h" />
+		<Unit filename="..\freetype\include\ftautoh.h" />
+		<Unit filename="..\freetype\include\ftbbox.h" />
+		<Unit filename="..\freetype\include\ftbdf.h" />
+		<Unit filename="..\freetype\include\ftbitmap.h" />
+		<Unit filename="..\freetype\include\ftbzip2.h" />
+		<Unit filename="..\freetype\include\ftcffdrv.h" />
+		<Unit filename="..\freetype\include\ftchapters.h" />
+		<Unit filename="..\freetype\include\ftcid.h" />
+		<Unit filename="..\freetype\include\fterrdef.h" />
+		<Unit filename="..\freetype\include\fterrors.h" />
+		<Unit filename="..\freetype\include\ftglyph.h" />
+		<Unit filename="..\freetype\include\ftgxval.h" />
+		<Unit filename="..\freetype\include\ftgzip.h" />
+		<Unit filename="..\freetype\include\ftimage.h" />
+		<Unit filename="..\freetype\include\ftincrem.h" />
+		<Unit filename="..\freetype\include\ftlcdfil.h" />
+		<Unit filename="..\freetype\include\ftlist.h" />
+		<Unit filename="..\freetype\include\ftlzw.h" />
+		<Unit filename="..\freetype\include\ftmac.h" />
+		<Unit filename="..\freetype\include\ftmm.h" />
+		<Unit filename="..\freetype\include\ftmodapi.h" />
+		<Unit filename="..\freetype\include\ftmoderr.h" />
+		<Unit filename="..\freetype\include\ftotval.h" />
+		<Unit filename="..\freetype\include\ftoutln.h" />
+		<Unit filename="..\freetype\include\ftrender.h" />
+		<Unit filename="..\freetype\include\ftsizes.h" />
+		<Unit filename="..\freetype\include\ftsnames.h" />
+		<Unit filename="..\freetype\include\ftstroke.h" />
+		<Unit filename="..\freetype\include\ftsynth.h" />
+		<Unit filename="..\freetype\include\ftsystem.h" />
+		<Unit filename="..\freetype\include\fttrigon.h" />
+		<Unit filename="..\freetype\include\ftttdrv.h" />
+		<Unit filename="..\freetype\include\fttypes.h" />
+		<Unit filename="..\freetype\include\ftwinfnt.h" />
+		<Unit filename="..\freetype\include\internal\autohint.h" />
+		<Unit filename="..\freetype\include\internal\ftcalc.h" />
+		<Unit filename="..\freetype\include\internal\ftdebug.h" />
+		<Unit filename="..\freetype\include\internal\ftdriver.h" />
+		<Unit filename="..\freetype\include\internal\ftgloadr.h" />
+		<Unit filename="..\freetype\include\internal\ftmemory.h" />
+		<Unit filename="..\freetype\include\internal\ftobjs.h" />
+		<Unit filename="..\freetype\include\internal\ftpic.h" />
+		<Unit filename="..\freetype\include\internal\ftrfork.h" />
+		<Unit filename="..\freetype\include\internal\ftserv.h" />
+		<Unit filename="..\freetype\include\internal\ftstream.h" />
+		<Unit filename="..\freetype\include\internal\fttrace.h" />
+		<Unit filename="..\freetype\include\internal\ftvalid.h" />
+		<Unit filename="..\freetype\include\internal\internal.h" />
+		<Unit filename="..\freetype\include\internal\psaux.h" />
+		<Unit filename="..\freetype\include\internal\pshints.h" />
+		<Unit filename="..\freetype\include\internal\sfnt.h" />
+		<Unit filename="..\freetype\include\internal\t1types.h" />
+		<Unit filename="..\freetype\include\internal\tttypes.h" />
+		<Unit filename="..\freetype\include\t1tables.h" />
+		<Unit filename="..\freetype\include\ttnameid.h" />
+		<Unit filename="..\freetype\include\tttables.h" />
+		<Unit filename="..\freetype\include\tttags.h" />
+		<Unit filename="..\freetype\include\ttunpat.h" />
+		<Unit filename="..\freetype\src\FreeSansBold.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\autofit\autofit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftbase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftbbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftbitmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftdebug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftfstype.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftglyph.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftinit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftlcdfil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftpatent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftsystem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\raster\raster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\sfnt\sfnt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\smooth\smooth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\truetype\truetype.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\inc\misc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_adc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_can.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_crc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_cryp.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_dac.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_dbgmcu.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_dcmi.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_dma.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_dma2d.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_exti.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_flash.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_flash_ramfunc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_fmc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_fsmc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_gpio.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_hash.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_i2c.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_iwdg.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_ltdc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_pwr.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_rcc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_rng.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_rtc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_sai.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_sdio.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_spi.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_syscfg.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_tim.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_usart.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_wwdg.h" />
+		<Unit filename="..\sharedF4\SPL\src\misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_fsmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_rcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_sdio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_syscfg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_tim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\cmsis\arm_common_tables.h" />
+		<Unit filename="..\sharedF4\cmsis\arm_math.h" />
+		<Unit filename="..\sharedF4\cmsis\core_cm4.h" />
+		<Unit filename="..\sharedF4\cmsis\core_cm4_simd.h" />
+		<Unit filename="..\sharedF4\cmsis\core_cmFunc.h" />
+		<Unit filename="..\sharedF4\cmsis\core_cmInstr.h" />
+		<Unit filename="..\sharedF4\startup_stm32f4xx.S">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\stm32f407vg_flash.ld" />
+		<Unit filename="..\sharedF4\stm32f407vg_sram.ld" />
+		<Unit filename="..\sharedF4\stm32f4xx.h" />
+		<Unit filename="..\sharedF4\stm32f4xx_conf.h" />
+		<Unit filename="..\sharedF4\system_stm32f4xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\system_stm32f4xx.h" />
+		<Unit filename="..\shared\F4fsmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\shared\display.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\shared\displayHw.h" />
+		<Unit filename="..\shared\displayTrueType.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\shared\image.h" />
+		<Unit filename="..\shared\ssd1289.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\shared\touch.h" />
+		<Unit filename="..\shared\touchF4spi2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Src\main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+			<code_completion />
+			<debugger>
+				<target_debugging_settings target="Release" active_interface="ST-link">
+					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBLOCKS}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="0" reg_filter="0" active_family="STMicroelectronics">
+						<family_options family_id="STMicroelectronics">
+							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
+							<option opt_id="ID_VECTOR_START" opt_value="0x08000000" />
+							<option opt_id="ID_LOAD_PROGRAM" opt_value="1" />
+							<option opt_id="ID_SEMIHOST_CHECK" opt_value="1" />
+							<option opt_id="ID_RAM_EXEC" opt_value="0" />
+							<option opt_id="ID_VEC_TABLE" opt_value="1" />
+							<option opt_id="ID_VERBOSE_LEVEL" opt_value="3" />
+						</family_options>
+					</debug_interface>
+				</target_debugging_settings>
+				<target_debugging_settings target="Debug" active_interface="ST-link">
+					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBLOCKS}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="0" reg_filter="0" active_family="STMicroelectronics">
+						<family_options family_id="STMicroelectronics">
+							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
+							<option opt_id="ID_VECTOR_START" opt_value="0x08000000" />
+							<option opt_id="ID_LOAD_PROGRAM" opt_value="1" />
+							<option opt_id="ID_SEMIHOST_CHECK" opt_value="1" />
+							<option opt_id="ID_RAM_EXEC" opt_value="0" />
+							<option opt_id="ID_VEC_TABLE" opt_value="1" />
+							<option opt_id="ID_VERBOSE_LEVEL" opt_value="3" />
+						</family_options>
+					</debug_interface>
+				</target_debugging_settings>
+			</debugger>
+			<envvars />
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" update_manifest="0" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</EmBlocks_project_file>

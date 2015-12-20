@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBlocks_project_file>
+	<EmBlocksVersion release="2.30" revision="1" />
+	<FileVersion major="1" minor="0" />
+	<Project>
+		<Option title="f407" />
+		<Option pch_mode="2" />
+		<Option compiler="armgcc_eb" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\f407.elf" />
+				<Option object_output="obj\Debug\" />
+				<Option type="0" />
+				<Option compiler="armgcc_eb" />
+				<Option projectDeviceOptionsRelation="0" />
+				<Device>
+					<Add option="$device=cortex-m4" />
+					<Add option="$fpu=fpv4-sp-d16" />
+					<Add option="$lscript=../sharedF4/stm32f407vg_flash.ld" />
+				</Device>
+				<Compiler>
+					<Add option="-mfloat-abi=hard" />
+					<Add option="-Wall" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+					<Add option="-O0" />
+					<Add option="-g3" />
+					<Add option="-DDEBUG" />
+					<Add option="-fno-strict-aliasing" />
+				</Compiler>
+				<Assembler>
+					<Add option="-Wa,--gdwarf-2" />
+				</Assembler>
+				<Linker>
+					<Add option="-eb_start_files" />
+					<Add option="-eb_lib=n" />
+					<Add option="-eb_use_semi" />
+					<Add option="-Wl,--gc-sections" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\f407.elf" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option create_hex="1" />
+				<Option compiler="armgcc_eb" />
+				<Option projectDeviceOptionsRelation="0" />
+				<Device>
+					<Add option="$device=cortex-m4" />
+					<Add option="$fpu=fpv4-sp-d16" />
+					<Add option="$lscript=../sharedF4/stm32f407vg_flash.ld" />
+				</Device>
+				<Compiler>
+					<Add option="-mfloat-abi=hard" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+					<Add option="-O2" />
+					<Add option="-g2" />
+					<Add option="-fno-strict-aliasing" />
+				</Compiler>
+				<Assembler>
+					<Add option="-Wa,--no-warn" />
+				</Assembler>
+				<Linker>
+					<Add option="-eb_start_files" />
+					<Add option="-eb_lib=n" />
+					<Add option="-Wl,--gc-sections" />
+				</Linker>
+			</Target>
+		</Build>
+		<Device>
+			<Add option="$device=cortex-m4" />
+			<Add option="$fpu=fpv4-sp-d16" />
+			<Add option="$lscript=../sharedF4/stm32f407vg_flash.ld" />
+			<Add option="$stack=0x1000" />
+			<Add option="$heap=0x1000" />
+		</Device>
+		<Compiler>
+			<Add option="-DARM_MATH_CM4" />
+			<Add option="-D__FPU_USED" />
+			<Add option="-DSTM32F4XX" />
+			<Add option="-DSTM32F40_41xxx" />
+			<Add option="-DUSE_STDPERIPH_DRIVER" />
+			<Add option="-DFT2_BUILD_LIBRARY" />
+			<Add directory="..\sharedF4\cmsis" />
+			<Add directory="..\sharedF4\SPL\inc" />
+			<Add directory="..\sharedF4\SPL\src" />
+			<Add directory="..\freetype\include" />
+			<Add directory="..\shared" />
+		</Compiler>
+		<Unit filename="Src\mainf407.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="inc\stm32f4xx.h" />
+		<Unit filename="inc\stm32f4xx_conf.h" />
+		<Unit filename="..\freetype\src\FreeSansBold.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\autofit\autofit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftbase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftbbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftbitmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftdebug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftfstype.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftglyph.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftinit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftlcdfil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftpatent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\base\ftsystem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\raster\raster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\sfnt\sfnt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\smooth\smooth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\freetype\src\truetype\truetype.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\inc\misc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_adc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_can.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_crc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_cryp.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_dac.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_dbgmcu.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_dcmi.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_dma.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_dma2d.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_exti.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_flash.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_flash_ramfunc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_fmc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_fsmc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_gpio.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_hash.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_i2c.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_iwdg.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_ltdc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_pwr.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_rcc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_rng.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_rtc.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_sai.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_sdio.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_spi.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_syscfg.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_tim.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_usart.h" />
+		<Unit filename="..\sharedF4\SPL\inc\stm32f4xx_wwdg.h" />
+		<Unit filename="..\sharedF4\SPL\src\misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_dcmi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_fsmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_pwr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_rcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_sdio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_syscfg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_tim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\SPL\src\stm32f4xx_usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\cmsis\arm_common_tables.h" />
+		<Unit filename="..\sharedF4\cmsis\arm_math.h" />
+		<Unit filename="..\sharedF4\cmsis\core_cm4.h" />
+		<Unit filename="..\sharedF4\cmsis\core_cm4_simd.h" />
+		<Unit filename="..\sharedF4\cmsis\core_cmFunc.h" />
+		<Unit filename="..\sharedF4\cmsis\core_cmInstr.h" />
+		<Unit filename="..\sharedF4\startup_stm32f4xx.S">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\stm32f407vg_flash.ld" />
+		<Unit filename="..\sharedF4\stm32f407vg_sram.ld" />
+		<Unit filename="..\sharedF4\system_stm32f4xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\sharedF4\system_stm32f4xx.h" />
+		<Unit filename="..\shared\F4i2c2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\shared\delay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\shared\delay.h" />
+		<Unit filename="..\shared\display.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\shared\display.h" />
+		<Unit filename="..\shared\displayFont.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\shared\displayHw.h" />
+		<Unit filename="..\shared\font.h" />
+		<Unit filename="..\shared\font120.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\shared\font18.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\shared\font36.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\shared\font72.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\shared\i2c.h" />
+		<Unit filename="..\shared\image.h" />
+		<Unit filename="..\shared\sharpF4spi1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger>
+				<target_debugging_settings target="Release" active_interface="ST-link">
+					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBLOCKS}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="0" reg_filter="0" active_family="STMicroelectronics">
+						<family_options family_id="STMicroelectronics">
+							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
+							<option opt_id="ID_VECTOR_START" opt_value="0x08000000" />
+							<option opt_id="ID_RESET_TYPE" opt_value="System" />
+							<option opt_id="ID_LOAD_PROGRAM" opt_value="1" />
+							<option opt_id="ID_SEMIHOST_CHECK" opt_value="1" />
+							<option opt_id="ID_RAM_EXEC" opt_value="1" />
+							<option opt_id="ID_VEC_TABLE" opt_value="1" />
+							<option opt_id="ID_DONT_CONN_RESET" opt_value="0" />
+							<option opt_id="ID_ALL_MODE_DEBUG" opt_value="0" />
+							<option opt_id="ID_DEV_ADDR" opt_value="" />
+							<option opt_id="ID_VERBOSE_LEVEL" opt_value="3" />
+						</family_options>
+					</debug_interface>
+				</target_debugging_settings>
+				<target_debugging_settings target="Debug" active_interface="ST-link">
+					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBLOCKS}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="0" reg_filter="0" active_family="STMicroelectronics">
+						<family_options family_id="STMicroelectronics">
+							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
+							<option opt_id="ID_VECTOR_START" opt_value="0x08000000" />
+							<option opt_id="ID_RESET_TYPE" opt_value="System" />
+							<option opt_id="ID_LOAD_PROGRAM" opt_value="1" />
+							<option opt_id="ID_SEMIHOST_CHECK" opt_value="1" />
+							<option opt_id="ID_RAM_EXEC" opt_value="0" />
+							<option opt_id="ID_VEC_TABLE" opt_value="1" />
+							<option opt_id="ID_DONT_CONN_RESET" opt_value="0" />
+							<option opt_id="ID_ALL_MODE_DEBUG" opt_value="0" />
+							<option opt_id="ID_DEV_ADDR" opt_value="" />
+							<option opt_id="ID_VERBOSE_LEVEL" opt_value="3" />
+						</family_options>
+					</debug_interface>
+				</target_debugging_settings>
+			</debugger>
+			<envvars />
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" update_manifest="0" do_auto_increment="0" ask_to_increment="0" language="C" svn="0" svn_directory="" header_path="src\version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</EmBlocks_project_file>

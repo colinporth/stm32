@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="..\files\diskio.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="795" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="..\files\ff.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="46511" topLine="1002" />
+		</Cursor>
+	</File>
+	<File name="..\files\ffconf.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="434" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\files\tjpgd.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12169" topLine="217" />
+		</Cursor>
+	</File>
+	<File name="..\freetype\include\config\ftoption.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13727" topLine="188" />
+		</Cursor>
+	</File>
+	<File name="..\freetype\include\config\ftstdlib.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4881" topLine="103" />
+		</Cursor>
+	</File>
+	<File name="..\freetype\src\base\ftbbox.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1738" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\freetype\src\base\ftbitmap.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1301" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\freetype\src\base\ftsystem.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12013" topLine="216" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\SPL\src\stm32f4xx_syscfg.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="142" />
+		</Cursor>
+	</File>
+	<File name="..\sharedF4\stm32f4xx.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="273812" topLine="3482" />
+		</Cursor>
+	</File>
+	<File name="..\shared\display.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1494" topLine="34" />
+		</Cursor>
+	</File>
+	<File name="..\shared\touch.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="214" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\shared\touchF4spi2.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3652" topLine="112" />
+		</Cursor>
+	</File>
+	<File name="Src\main.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5393" topLine="182" />
+		</Cursor>
+	</File>
+</EmBlocks_layout_file>

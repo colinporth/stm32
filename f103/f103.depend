@@ -1,0 +1,236 @@
+# depslib dependency file v1.0
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\misc.c
+	"misc.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\misc.h
+	"stm32f10x.h"
+
+1423843275 c:\users\nnn\desktop\stm32 projects\sharedf103\stm32f10x.h
+	"core_cm3.h"
+	"system_stm32f10x.h"
+	<stdint.h>
+	"stm32f10x_conf.h"
+
+1423653218 c:\users\nnn\desktop\stm32 projects\sharedf103\cmsis\core_cm3.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+
+1423653218 c:\users\nnn\desktop\stm32 projects\sharedf103\cmsis\core_cminstr.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+
+1423653218 c:\users\nnn\desktop\stm32 projects\sharedf103\cmsis\core_cmfunc.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\system_stm32f10x.h
+
+1423669931 c:\users\nnn\desktop\stm32 projects\sharedf103\stm32f10x_conf.h
+	"stm32f10x_adc.h"
+	"stm32f10x_bkp.h"
+	"stm32f10x_dac.h"
+	"stm32f10x_dbgmcu.h"
+	"stm32f10x_dma.h"
+	"stm32f10x_exti.h"
+	"stm32f10x_flash.h"
+	"stm32f10x_gpio.h"
+	"stm32f10x_i2c.h"
+	"stm32f10x_iwdg.h"
+	"stm32f10x_pwr.h"
+	"stm32f10x_rcc.h"
+	"stm32f10x_rtc.h"
+	"stm32f10x_sdio.h"
+	"stm32f10x_spi.h"
+	"stm32f10x_tim.h"
+	"stm32f10x_usart.h"
+	"stm32f10x_wwdg.h"
+	"misc.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_adc.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_bkp.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_dac.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_dbgmcu.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_dma.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_exti.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_flash.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_gpio.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_i2c.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_iwdg.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_pwr.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_rcc.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_rtc.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_sdio.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_spi.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_tim.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_usart.h
+	"stm32f10x.h"
+
+1423653217 c:\users\nnn\desktop\stm32 projects\sharedf103\spl\inc\stm32f10x_wwdg.h
+	"stm32f10x.h"
+
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_adc.c
+	"stm32f10x_adc.h"
+	"stm32f10x_rcc.h"
+
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_bkp.c
+	"stm32f10x_bkp.h"
+	"stm32f10x_rcc.h"
+
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_dac.c
+	"stm32f10x_dac.h"
+	"stm32f10x_rcc.h"
+
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_dbgmcu.c
+	"stm32f10x_dbgmcu.h"
+
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_dma.c
+	"stm32f10x_dma.h"
+	"stm32f10x_rcc.h"
+
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_exti.c
+	"stm32f10x_exti.h"
+
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_flash.c
+	"stm32f10x_flash.h"
+
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_gpio.c
+	"stm32f10x_gpio.h"
+	"stm32f10x_rcc.h"
+
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_i2c.c
+	"stm32f10x_i2c.h"
+	"stm32f10x_rcc.h"
+
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_iwdg.c
+	"stm32f10x_iwdg.h"
+
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_pwr.c
+	"stm32f10x_pwr.h"
+	"stm32f10x_rcc.h"
+
+1423653217 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_rcc.c
+	"stm32f10x_rcc.h"
+
+1423653218 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_rtc.c
+	"stm32f10x_rtc.h"
+
+1423653218 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_sdio.c
+	"stm32f10x_sdio.h"
+	"stm32f10x_rcc.h"
+
+1423653218 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_spi.c
+	"stm32f10x_spi.h"
+	"stm32f10x_rcc.h"
+
+1423653218 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_tim.c
+	"stm32f10x_tim.h"
+	"stm32f10x_rcc.h"
+
+1423653218 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_usart.c
+	"stm32f10x_usart.h"
+	"stm32f10x_rcc.h"
+
+1423653218 source:c:\users\nnn\desktop\stm32 projects\sharedf103\spl\src\stm32f10x_wwdg.c
+	"stm32f10x_wwdg.h"
+	"stm32f10x_rcc.h"
+
+1423844029 source:c:\users\nnn\desktop\stm32 projects\sharedf103\startup_stm32f10x_hd.s
+
+1423921758 source:c:\users\nnn\desktop\stm32 projects\sharedf103\system_stm32f10x.c
+	"stm32f10x.h"
+
+1424956587 source:c:\users\nnn\desktop\stm32 projects\shared\display.c
+	"display.h"
+	"displayHw.h"
+
+1427215488 c:\users\nnn\desktop\stm32 projects\shared\display.h
+	<stdint.h>
+	<stdbool.h>
+	"font.h"
+	"image.h"
+
+1424533849 c:\users\nnn\desktop\stm32 projects\shared\font.h
+	<stdint.h>
+
+1380641089 c:\users\nnn\desktop\stm32 projects\shared\image.h
+	<stdbool.h>
+	<stdint.h>
+
+1425122301 c:\users\nnn\desktop\stm32 projects\shared\displayhw.h
+	<stdint.h>
+	<stdbool.h>
+
+1424968773 source:c:\users\nnn\desktop\stm32 projects\shared\displayfont.c
+	"display.h"
+	"displayHw.h"
+	"font.h"
+
+1430302353 source:c:\users\nnn\desktop\stm32 projects\shared\sharpf103spi1.c
+	"display.h"
+	"stm32f10x.h"
+	"stm32f10x_rcc.h"
+	"stm32f10x_gpio.h"
+	"stm32f10x_spi.h"
+
+1430238873 source:c:\users\nnn\desktop\stm32 projects\f103\src\mainf103.c
+	<stdio.h>
+	<stdint.h>
+	"stm32f10x.h"
+	"stm32f10x_rcc.h"
+	"stm32f10x_gpio.h"
+	"display.h"
+	"delay.h"
+
+1426511987 c:\users\nnn\desktop\stm32 projects\shared\delay.h
+	"stdint.h"
+
+1429984111 source:c:\users\nnn\desktop\stm32 projects\shared\delay.c
+	"delay.h"
+	"stm32f10x.h"
+	"stm32f4xx.h"
+
+1424452513 source:c:\users\nnn\desktop\stm32 projects\shared\font120.c
+	"font.h"
+
+1424452338 source:c:\users\nnn\desktop\stm32 projects\shared\font18.c
+	"font.h"
+
+1424452338 source:c:\users\nnn\desktop\stm32 projects\shared\font36.c
+	"font.h"
+
+1424452514 source:c:\users\nnn\desktop\stm32 projects\shared\font72.c
+	"font.h"
+
